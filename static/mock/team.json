@@ -1,0 +1,44 @@
+[
+  {
+    "photo1": "team/1.jpg",
+    "photo2": "team/12.jpg",
+    "name": "Павел Чистяков",
+    "post": "Генеральный директор"
+  },
+  {
+    "photo1": "team/2.jpg",
+    "photo2": "team/22.jpg",
+    "name": "Дмитрий Фомичёв",
+    "post": "Менеджер проектов"
+  },
+  {
+    "photo1": "team/3.jpg",
+    "photo2": "team/32.jpg",
+    "name": "Павел Нестерчук",
+    "post": "SEO-специалист"
+  },
+  {
+    "photo1": "team/4.jpg",
+    "photo2": "team/42.jpg",
+    "name": "Евгений Расчётов",
+    "post": "Дизайнер"
+  },
+  {
+    "photo1": "team/5.jpg",
+    "photo2": "team/52.jpg",
+    "name": "Светлана Рослякова",
+    "post": "Дизайнер"
+  },
+  {
+    "photo1": "team/6.jpg",
+    "photo2": "team/62.jpg",
+    "name": "Роман Гарманов",
+    "post": "Программист"
+  },
+  {
+    "photo1": "team/7.jpg",
+    "photo2": "team/72.jpg",
+    "name": "Анастасия Козлова",
+    "post": "Программист"
+  }
+]

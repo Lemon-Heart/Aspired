@@ -1,0 +1,163 @@
+html {
+  overflow: hidden;
+}
+body {
+  font-size: 16px;
+  line-height: 1.3;
+  font-family: $Roboto;
+  font-weight: normal;
+  cursor: default;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.content {
+  height: 100vh;
+  padding-left: 90px;
+  @include r(1180px) {
+    padding-top: 50px;
+    padding-left: 0px;
+  }
+  &--main {
+    padding-left: 0;
+    transition: transform 0.3s ease-in-out;
+    &.content--translate {
+      transform: translateX(125px)
+    }
+  }
+}
+
+h1, h2 {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+  font-size: 32px;
+  line-height: 1.375;
+  font-weight: 700;
+  &.upper {
+    text-transform: uppercase;
+    font-family: $RobotoSlab;
+  }
+  @include r(600px) {
+    font-size: 20px;
+  }
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.flex {
+  display: flex;
+  &.flex-col {
+    flex-direction: column;
+  }
+  &.s-b {
+    justify-content: space-between;
+  }
+  &.s-a {
+    justify-content: space-around;
+  }
+  &.s-e {
+    justify-content: space-evenly;
+  }
+  &.wrap {
+    flex-wrap: wrap;
+  }
+  &.left {
+    justify-content: flex-start;
+    & > *:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.autogrid {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(160px, 1fr) );
+  grid-gap: 3vw;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgb(17 40 51 / 35%);
+  background-color: #fff;
+  color: #000;
+  border-radius: 25px;
+  line-height: 28px;
+  min-height: 50px;
+  min-width: 150px;
+  font-weight: 700;
+  position: relative;
+  &.primary {
+    background-color: $baseColor;
+    color: white;
+  }
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  &:hover {
+    color: $baseColor;
+  }
+}
+
+textarea {
+  padding: 14px 18px 9px 18px;
+  width: 100%;
+  height: 100px;
+  resize: none!important;
+  color: #313133;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border-style: solid!important;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  outline: none;
+  &:focus {
+    border-color: $baseColor;
+  }
+  &::placeholder {
+    color: #ccc;
+  }
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.customScroll {
+  @extend %custom-scroll;
+}
+
+.placeholder {
+  color: #9d9d9d;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  display: block;
+}
+
+$margin: 10;
+@while $margin < 100 {
+  .mt#{$margin} {
+    margin-top: #{$margin}px;
+  }
+  .mb#{$margin} {
+    margin-bottom: #{$margin}px;
+  }
+  .grid-margin-bot-#{$margin} > *:not(:last-child) {
+    margin-bottom: #{$margin}px;
+  }
+  $margin: $margin + 5;
+}
+
+

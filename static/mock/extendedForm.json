@@ -1,0 +1,96 @@
+{
+  "extendedForm": [
+    [
+      {
+        "title": "",
+        "name": "personalName",
+        "label": "Как к Вам обращаться?",
+        "required": true,
+        "error": false,
+        "type": "AppInput"
+      },
+      {
+        "title": "",
+        "name": "companyName",
+        "label": "Название Вашей компании",
+        "required": true,
+        "error": false,
+        "type": "AppInput"
+      },
+      {
+        "title": "",
+        "name": "companyWork",
+        "label": "Чем занимается Ваша компания?",
+        "required": true,
+        "error": false,
+        "type": "AppInput"
+      },
+      {
+        "title": "",
+        "name": "contact",
+        "label": "Телефон или E-mail",
+        "required": true,
+        "error": false,
+        "type": "AppInput"
+      }
+    ],
+    [
+      {
+        "title": "",
+        "name": "selectedSite",
+        "label": "Не выбрано",
+        "options": ["Сайт-визитка", "Сайт-портфолио", "Блог", "Корпоративный сайт с каталогом", "Корпоративный без каталога", "Интернет-магазин", "Информационный портал", "Другое"],
+        "required": true,
+        "error": false,
+        "type": "AppSelect"
+      },
+      {
+        "title": "",
+        "name": "message",
+        "label": "Пожелания по функционалу сайта. Укажите все, что, с вашей точки зрения, может уточнить задачу по созданию сайта",
+        "required": false,
+        "error": false,
+        "type": "AppTextarea"
+      },
+      {
+        "title": "Да",
+        "name": "haveLogo",
+        "label": "У вас уже есть логотип и элементы фирменного стиля?",
+        "required": true,
+        "error": false,
+        "type": "RadioCluster",
+        "variants": ["Да", "Нет"]
+      }
+    ],
+    [
+      {
+        "title": "Да",
+        "name": "needPay",
+        "label": "Нужны ли на сайте платежные системы?",
+        "required": true,
+        "error": false,
+        "type": "RadioCluster",
+        "variants": ["Да", "Нет"]
+      },
+      {
+        "title": "Да",
+        "name": "need1C",
+        "label": "Нужна ли интеграция с бухгалтерией 1С?",
+        "required": true,
+        "error": false,
+        "type": "RadioCluster",
+        "variants": ["Да", "Нет"]
+      },
+      {
+        "title": "Да",
+        "name": "needAdaptive",
+        "label": "Сайт должен быть адаптивным?",
+        "required": true,
+        "error": false,
+        "type": "RadioCluster",
+        "variants": ["Да", "Нет"]
+      }
+    ]
+  ],
+  "progressIcons": [{"icon": "home"}, {"icon": "web"}, {"icon": "gear"}]
+}

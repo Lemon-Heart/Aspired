@@ -1,0 +1,43 @@
+.box {
+  padding: 60px 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  will-change: transform;
+  z-index: 10;
+  @include r(1180px) {
+    padding: 20px 0;
+  }
+  &__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 30px;
+    @include r(1180px) {
+      padding: 0 20px;
+    }
+    @include r(900px) {
+      flex-direction: column;
+    }
+  }
+  &__body, &__body--fake {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: .7s;
+  }
+  &__range {
+    position: relative;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    transition: .3s;
+    transform: translateY(0);
+    opacity: 1;
+    &.hide {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+  }
+}

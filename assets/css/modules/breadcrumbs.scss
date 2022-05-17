@@ -1,0 +1,32 @@
+.breadcrumbs {
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  position: relative;
+  @include r(500px) {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+  &.portfolio {
+    @include r(700px) {
+      margin-bottom: 5px;
+    }
+  }
+  a {
+    color: rgb(158, 158, 158);
+    font-size: 14px;
+    &:hover {
+      color: $baseColor;
+    }
+    &:not(:last-child):after {
+      content: '/';
+    }
+  }
+  &:before {
+    content: '';
+    width: 40px;
+    border: 2px solid $baseColor;
+    position: absolute;
+    bottom: 0;
+    background: $baseColor;
+  }
+}

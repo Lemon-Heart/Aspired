@@ -1,0 +1,44 @@
+{
+  "quickForm": [
+    {
+      "title": "",
+      "name": "name",
+      "label": "Как к Вам обращаться?",
+      "required": true,
+      "error": false,
+      "type": "AppInput"
+    },
+    {
+      "title": "",
+      "name": "phone",
+      "label": "Телефон",
+      "required": true,
+      "error": false,
+      "type": "AppInput",
+      "mask": "+7 (###) ### ##-##"
+    },
+    {
+      "title": "",
+      "name": "mail",
+      "label": "E-mail",
+      "required": true,
+      "error": false,
+      "type": "AppInput"
+    }
+  ],
+  "title": "Свяжитесь с нами!",
+  "description": "Напишите свой телефон или Email, и в ближайшее время мы с Вами свяжемся.",
+  "buttonText": "Отправить контакты",
+  "links": [
+    {
+      "url": "https://vk.com/we_aspired",
+      "text": "Написать нам",
+      "icon": "vk2"
+    },
+    {
+      "url": "https://vk.com/we_aspired",
+      "text": "Написать нам",
+      "icon": "fb"
+    }
+  ]
+}

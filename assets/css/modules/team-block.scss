@@ -1,0 +1,53 @@
+.team {
+  &__item {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include r(500px) {
+      margin: 0 20px;
+    }
+    h3 {
+      font-family: $RobotoSlab;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    span {
+      font-size: 16px;
+    }
+  }
+  &__wrap {
+    margin-bottom: 20px;
+    width: 310px;
+    height: 310px;
+    border: 2px solid #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    :hover {
+      img, .team__photo--2 {
+        opacity: 0;
+        transition: .5s;
+      }
+    }
+  }
+  &__photo {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    img, &--2 {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      transition: 1.5s;
+    }
+  }
+}

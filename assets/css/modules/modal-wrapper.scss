@@ -1,0 +1,39 @@
+.modal-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 400;
+  background: linear-gradient(to top, #000 0%, #191919 0%, #bd4c22 52%, #fe9d30 100%);
+  transform: translateY(-100%);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include r(500px) {
+    align-items: flex-start;
+    overflow-y: auto;
+  }
+  .close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 100;
+    @include r(800px) {
+      top: 0px;
+      right: 10px;
+      color: black;
+    }
+  }
+  &.opened {
+    transform: translateY(0);
+    transition: .5s cubic-bezier(0, 0.67, 0.47, 1);
+  }
+  &.closed {
+    transition: .7s cubic-bezier(0.31, 0.01, 0.45, 1.01);
+  }
+}

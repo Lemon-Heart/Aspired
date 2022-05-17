@@ -1,0 +1,170 @@
+[
+  {
+    "title": "ОАО 'Водоканал'",
+    "to": "/portfolio/Водоканал",
+    "developed": ["Разработка", "Графический дизайн"],
+    "previewImg": "portfolio/preview/Водоканал.png",
+    "year": 2015,
+    "id": 1
+  },
+  {
+    "title": "АветПарк",
+    "to": "/portfolio/АветПарк",
+    "developed": ["Разработка"],
+    "previewImg": "portfolio/preview/АветПарк.png",
+    "year": 2016,
+    "id": 2
+  },
+  {
+    "title": "Реклама и Фасады",
+    "to": "/portfolio/Реклама и Фасады",
+    "developed": ["Разработка", "Интернет-маркетинг", "Графический дизайн"],
+    "previewImg": "portfolio/preview/РиФ.png",
+    "year": 2015,
+    "id": 3
+  },
+  {
+    "title": "Шарлиз",
+    "to": "/portfolio/Шарлиз",
+    "developed": ["Графический дизайн"],
+    "previewImg": "portfolio/preview/Шарлиз.png",
+    "year": 2018,
+    "id": 4
+  },
+  {
+    "title": "СЭЛТ",
+    "to": "/portfolio/СЭЛТ",
+    "developed": ["Разработка", "Графический дизайн"],
+    "previewImg": "portfolio/preview/СЭЛТ.png",
+    "year": 2013,
+    "id": 5
+  },
+  {
+    "title": "Арт Постель",
+    "to": "/portfolio/Арт Постель",
+    "developed": ["Разработка", "Графический дизайн"],
+    "previewImg": "portfolio/preview/АртПостель.png",
+    "year": 2019,
+    "id": 6
+  },
+  {
+    "title": "Ди Арт",
+    "to": "/portfolio/Ди Арт",
+    "developed": ["Разработка", "Графический дизайн"],
+    "previewImg": "portfolio/preview/ДиАрт.png",
+    "year": 2019,
+    "id": 7
+  },
+  {
+    "title": "Медицинский центр на Лежневской",
+    "to": "/portfolio/Медицинский центр на Лежневской",
+    "developed": ["Разработка", "Интернет-маркетинг", "Графический дизайн"],
+    "previewImg": "portfolio/preview/Мед.png",
+    "year": 2019,
+    "id": 8
+  },
+  {
+    "title": "Центр энергетических исследований",
+    "to": "/portfolio/Центр энергетических исследований",
+    "developed": ["Разработка", "Графический дизайн"],
+    "previewImg": "portfolio/preview/ЦИС.png",
+    "year": 2012,
+    "id": 9
+  },
+  {
+    "title": "ГУП ТЭК Санкт-Петербурга",
+    "to": "/portfolio/ГУП ТЭК Санкт-Петербурга",
+    "developed": ["Разработка", "Интернет-маркетинг", "Графический дизайн", "Мобильные приложения"],
+    "previewImg": "portfolio/preview/ТЭК.png",
+    "year": 2017,
+    "id": 10
+  },
+  {
+    "title": "Сарафаново",
+    "to": "/portfolio/Сарафаново",
+    "developed": ["Разработка", "Интернет-маркетинг", "Графический дизайн", "Мобильные приложения"],
+    "previewImg": "portfolio/preview/Сарафаново.png",
+    "year": 2017,
+    "id": 11
+  },
+  {
+    "title": "Студия клееного бруса",
+    "to": "/portfolio/Студия клееного бруса",
+    "developed": ["Разработка", "Интернет-маркетинг", "Графический дизайн"],
+    "previewImg": "portfolio/preview/СКБ.png",
+    "year": 2012,
+    "id": 12
+  },
+  {
+    "title": "Египет FM",
+    "to": "/portfolio/Египет FM",
+    "developed": ["Разработка", "Графический дизайн"],
+    "previewImg": "portfolio/preview/Египет-FM.png",
+    "year": 2016,
+    "id": 13
+  },
+  {
+    "title": "Ассоциация крымских риелторов",
+    "to": "/portfolio/Ассоциация крымских риелторов",
+    "developed": ["Разработка", "Графический дизайн"],
+    "previewImg": "portfolio/preview/АКР.png",
+    "year": 2015,
+    "id": 14
+  },
+  {
+    "title": "НПК Спецаппарат",
+    "to": "/portfolio/НПК Спецаппарат",
+    "developed": ["Разработка", "Интернет-маркетинг", "Графический дизайн"],
+    "previewImg": "portfolio/preview/НПК.png",
+    "year": 2016,
+    "id": 15
+  },
+  {
+    "title": "Самнадзор",
+    "to": "/portfolio/Самнадзор",
+    "developed": ["Разработка", "Графический дизайн"],
+    "previewImg": "portfolio/preview/Самнадзор.png",
+    "year": 2017,
+    "id": 16
+  },
+  {
+    "title": "Академия МЧС России Иваново",
+    "to": "/portfolio/Академия МЧС России Иваново",
+    "developed": ["Разработка", "Графический дизайн"],
+    "previewImg": "portfolio/preview/МЧС.png",
+    "year": 2016,
+    "id": 17
+  },
+  {
+    "title": "Сетлана рентген",
+    "to": "/portfolio/Сетлана рентген",
+    "developed": ["Графический дизайн"],
+    "previewImg": "portfolio/preview/СветланаРентген.jpg",
+    "year": 2018,
+    "id": 18
+  },
+  {
+    "title": "The iStore - сеть премиальных магазинов Apple в России",
+    "to": "/portfolio/The iStore",
+    "developed": ["Графический дизайн"],
+    "previewImg": "portfolio/preview/iStore.jpg",
+    "year": 2017,
+    "id": 19
+  },
+  {
+    "title": "Индустрия здоровья",
+    "to": "/portfolio/Индустрия здоровья",
+    "developed": ["Разработка", "Графический дизайн"],
+    "previewImg": "portfolio/preview/ИндустрияЗдоровья.jpg",
+    "year": 2018,
+    "id": 20
+  },
+  {
+    "title": "Петербургское садовое кольцо",
+    "to": "/portfolio/Петербургское садовое кольцо",
+    "developed": ["Графический дизайн"],
+    "previewImg": "portfolio/preview/садовоекольцо.png",
+    "year": 2017,
+    "id": 21
+  }
+]

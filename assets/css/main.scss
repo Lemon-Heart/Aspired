@@ -1,0 +1,30 @@
+// VARIABLES AND MIXINS
+@import './base/_reset.css';
+@import './base/variables';
+@import './base/_mixins';
+
+// FONTS
+@import './base/_fonts.scss';
+
+// DEFAULTS
+@import './base/_common.scss';
+@import './base/animation.scss';
+
+//MODULES
+@import './modules/modal.scss';
+@import './modules/sidebar.scss';
+@import './modules/mainScreen.scss';
+@import './modules/swiper.scss';
+@import './modules/brief.scss';
+@import './modules/errorPage.scss';
+@import './modules/modal-wrapper.scss';
+@import './modules/splitpanels.scss';
+@import './modules/scroll-horizontal-layout.scss';
+@import './modules/breadcrumbs.scss';
+@import './modules/counter.scss';
+@import './modules/scroll-button.scss';
+@import './modules/reviews-block.scss';
+@import './modules/team-block.scss';
+@import './modules/portfolio-block.scss';
+@import './modules/input-range.scss';
+@import './modules/filters.scss';
