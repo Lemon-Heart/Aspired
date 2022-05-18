@@ -3,7 +3,7 @@
   width: 100vw;
 }
 .vm--container {
-  position: fixed;
+  position: absolute;
   box-sizing: border-box;
   left: 0;
   top: 0;
@@ -35,7 +35,16 @@
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  margin: auto;
+  height: 100%!important;
+  max-height: 610px!important;
+  align-items: center;
+  @include r(750px) {
+    margin: auto 30px;
+  }
+  @include r(450px) {
+    max-height: 650px!important;
+    margin: auto 10px;
+  }
 }
 .vm--container.scrollable .vm--modal {
   margin-bottom: 2px;
@@ -49,9 +58,7 @@
   cursor: pointer;
   z-index: 100;
   @include r(800px) {
-    top: 0px;
-    right: 10px;
-    color: black;
+    display: none;
   }
 }
 .vm-transition--overlay-enter-active {
@@ -103,5 +110,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @include r(750px) {
+      width: calc(100% - 60px);
+      padding: 50px;
+    }
+    @include r(450px) {
+      max-height: 650px;
+      padding: 30px 0;
+    }
   }
 }

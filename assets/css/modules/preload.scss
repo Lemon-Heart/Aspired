@@ -1,0 +1,48 @@
+.preload-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-150%);
+  z-index: -100;
+  transition: transform .5s;
+  opacity: 0;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -100px;
+    bottom: 0;
+    width: 500px;
+    background-color: $baseColor;
+    transition: 0.6s cubic-bezier(0.54, 0.01, 0.53, 0.99);
+  }
+  &.active {
+    z-index: 900;
+    opacity: 1;
+    transform: translateX(0);
+    &:before {
+      width: 100px;
+    }
+  }
+  &.leave {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+  .preload {
+    height: 75px;
+    width: 75px;
+    overflow: hidden;
+    &__img {
+      background: url('@/static/preload/preload_1.png');
+      transform: translateX(0%);
+      width: 4500px;
+      height: 100%;
+    }
+  }
+}

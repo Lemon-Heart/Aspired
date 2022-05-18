@@ -50,7 +50,7 @@
   }
   .link {
     position: fixed;
-    bottom: 20px;
+    bottom: 50px;
     &:hover {
       a {
         &::after, &::before {
@@ -65,7 +65,7 @@
       font-family: $RobotoSlab;
       position: relative;
       &:after {
-        content: '▶';
+        content: '➤';
         position: absolute;
         width: 15px;
         height: 20px;
@@ -143,6 +143,9 @@
   }
   @include r(900px) {
     margin-bottom: 50px;
+    &.pd {
+      margin-bottom: 100px;
+    }
   }
   &.ovf {
     overflow-y: hidden;

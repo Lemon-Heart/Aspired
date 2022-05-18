@@ -107,7 +107,7 @@ export default {
         const direction = event.touches[0].pageX - this.e.touches[0].pageX
         if (direction < -10) {
           if (this.revertTranslateX < this.maxTranslateX) {
-            this.translateX -= direction * -1 / 10
+            this.translateX -= direction * -1
           } else {
             this.translateX = this.revertMaxTranslateX
           }
@@ -116,10 +116,13 @@ export default {
           if (this.translateX >= 0) {
             this.translateX = 0
           } else {
-            this.translateX += direction / 10
+            this.translateX += direction
           }
         }
       }
+      setTimeout(() => {
+        this.e = null
+      }, 150)
     },
     touchstart (event) {
       this.e = event

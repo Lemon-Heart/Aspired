@@ -1,5 +1,8 @@
 <template>
   <div class="brief" @click.stop>
+    <div class="close" @click="$modal.hide('brief')">
+      ✖
+    </div>
     <transition name="message" mode="in-out">
       <div :key="'brief__wrap'" class="brief__wrap">
         <div class="brief__left">

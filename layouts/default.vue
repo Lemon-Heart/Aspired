@@ -8,14 +8,12 @@
       @setLargeSidebar="setLargeSidebar"
       @setSmallSidebar="setSmallSidebar"
     />
-    <div class="content" :class="{'content--main': indexPage, 'content--translate': !miniVariant}">
-      <Nuxt />
-    </div>
+    <Nuxt :class="{'content--translate': !miniVariant}" />
     <button class="briefButton" :class="{'briefButton--portfolio': $route.name === 'Портфолио'}" @click="$modal.show('brief')">
       <penIcon />
     </button>
     <client-only>
-      <modal height="610" :max-width="950" width="100%" name="brief">
+      <modal :max-width="950" width="100%" name="brief">
         <div slot="top-right" class="close" @click="$modal.hide('brief')">
           ✖
         </div>
@@ -25,6 +23,7 @@
     <transition name="message">
       <form-complete v-if="getFormCompleteVisible" :key="'form-complete'" :message="getMessage" />
     </transition>
+    <!-- <ThePreload :visible="preload" @hidePreload="preload = false" /> -->
   </div>
 </template>
 
@@ -37,6 +36,7 @@ export default {
   components: { penIcon },
   data () {
     return {
+      // preload: false,
       indexPage: false,
       miniVariant: true,
       sidebarFull: false
@@ -49,9 +49,8 @@ export default {
     $route () {
       this.$modal.hide('brief')
       this.sidebarFull = false
-      setTimeout(() => {
-        this.checkOnIndexPage()
-      }, 500)
+      // this.preload = true
+      this.checkOnIndexPage()
     },
     sidebarFull (newValue, oldValue) {
       if (newValue === true) {

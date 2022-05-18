@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="content content--main">
     <swiper ref="mainSlider" class="mainSlider" :auto-destroy="false" :options="swiperOptions" @slideChange="onSlideChange">
       <swiper-slide class="mainScreen">
         <div class="mainScreen__main">

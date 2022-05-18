@@ -5,7 +5,7 @@
     </pane>
     <pane :min-size="rightMinSize" :size="rightSize">
       <TheBreadcrumbs />
-      <div ref="paneContent" class="paneContent customScroll" :class="{'ovf': $route.path === '/reviews'}">
+      <div ref="paneContent" class="paneContent customScroll" :class="{'ovf': $route.path === '/reviews', 'pd': $route.meta.link}">
         <slot :parent="parent" name="right" />
       </div>
       <button ref="scrollButton" type="button" class="scroll-button" @click="toTop" />

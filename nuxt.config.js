@@ -22,6 +22,11 @@ export default {
     '@/assets/css/main.scss'
   ],
 
+  // server: {
+  //   port: 3000,
+  //   host: '0.0.0.0'
+  // },
+
   pageTransition: {
     name: 'page'
   },
